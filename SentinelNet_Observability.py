@@ -16,8 +16,8 @@ class SentinelLauncher(ctk.CTk):
 
         # --- DADOS DO SISTEMA ---
         self.sistema_nome = "SENTINEL NET"
-        self.token = "7680348560:AAEg3ddNMjgHPFMvfuXrENEgyJZMR1nus_Y"
-        self.chat_id = "7694564020"
+        self.token = ""
+        self.chat_id = ""
         self.lojas_bloqueadas = set()
         
         self.regioes = {
@@ -152,4 +152,5 @@ falha fisica (queda de luz, fio cortado, etc)
 
 if __name__ == "__main__":
     app = SentinelLauncher()
+
     app.mainloop()
