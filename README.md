@@ -14,3 +14,22 @@ O **SentinelNet** é um launcher de monitoramento de rede e unidades desenvolvid
 * CustomTkinter (Interface Gráfica)
 * Requests (Integração com API do Telegram)
 * Threading (Processamento paralelo para monitoramento sem travamentos)
+
+## Configuração do Bot (Telegram)
+
+Para que o **SentinelNet** envie alertas para o seu celular, siga os passos abaixo:
+
+1. **Criar o Bot:**
+   - Procure o [@BotFather](https://t.me/botfather) no Telegram.
+   - Digite `/newbot` e siga as instruções para dar um nome ao seu robô.
+   - O BotFather enviará um **API TOKEN**. Guarde-o.
+
+2. **Obter seu ID de Usuário:**
+   - Procure o [@userinfobot](https://t.me/userinfobot) no Telegram.
+   - Envie qualquer mensagem para ele e ele responderá com o seu `Id`.
+
+3. **Configurar o Script:**
+   - No arquivo substitua as variáveis abaixo pelos dados que você obteve:
+   ```python
+   self.token = "SEU_TOKEN_AQUI"
+   self.chat_id = "SEU_ID_AQUI"
